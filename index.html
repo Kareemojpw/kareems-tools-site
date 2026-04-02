@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KareemTools - 100+ Premium Developer Utilities</title>
+    <meta name="description" content="100+ rare and powerful online tools for developers, designers, and engineers. Free and premium utilities by Kareem">
+    <meta name="author" content="Kareem Mohamed Elsayed">
+    <meta name="copyright" content="Kareem - Kareem Mohamed Elsayed">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="KareemTools - Premium Developer Utilities">
+    <meta property="og:description" content="100+ rare developer tools by Kareem Mohamed Elsayed. Free and premium utilities for developers, designers, and engineers.">
+    <meta property="og:author" content="Kareem Mohamed Elsayed">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KareemTools - Premium Developer Utilities">
+    <meta name="twitter:description" content="100+ rare developer tools by Kareem Mohamed Elsayed.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>K</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <nav class="glass-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">&#9670;</span>
+                <span class="logo-text">Kareem<span class="accent">Tools</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#tools">Tools</a>
+                <a href="#categories">Categories</a>
+                <a href="#premium">Premium</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="nav-actions">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+                    <span class="theme-icon">&#9789;</span>
+                </button>
+                <button id="loginBtn" class="btn btn-ghost">Sign In</button>
+                <button id="upgradeBtn" class="btn btn-primary">Go Premium</button>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge">100+ Curated Tools</div>
+            <h1>The Ultimate <span class="gradient-text">Developer Toolkit</span></h1>
+            <p>100+ rare, powerful, and meticulously crafted utilities. 80+ free forever. 20 premium tools for professionals.</p>
+            <div class="hero-actions">
+                <a href="#tools" class="btn btn-primary btn-lg">Browse All Tools</a>
+                <a href="#premium" class="btn btn-outline btn-lg">See Premium</a>
+            </div>
+        </div>
+        <div class="hero-stats glass-card">
+            <div class="stat">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Total Tools</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number">80+</span>
+                <span class="stat-label">Free Forever</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number">20</span>
+                <span class="stat-label">Premium</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="filter-section" id="categories">
+        <div class="search-box glass-card">
+            <span class="search-icon">&#128269;</span>
+            <input type="text" id="toolSearch" placeholder="Search 100+ tools..." autocomplete="off">
+        </div>
+        <div class="category-filters">
+            <button class="filter-btn active" data-category="all">All Tools</button>
+            <button class="filter-btn" data-category="developer">Developer</button>
+            <button class="filter-btn" data-category="security">Security</button>
+            <button class="filter-btn" data-category="design">Design</button>
+            <button class="filter-btn" data-category="file">File Analysis</button>
+            <button class="filter-btn" data-category="content">Content</button>
+            <button class="filter-btn" data-category="math">Mathematics</button>
+            <button class="filter-btn" data-category="network">Network</button>
+            <button class="filter-btn" data-category="text">Text</button>
+        </div>
+    </section>
+
+    <section class="tools-section" id="tools">
+        <div class="tools-grid" id="toolsGrid"></div>
+        <p class="tools-count" id="toolsCount"></p>
+    </section>
+
+    <section class="premium-section" id="premium">
+        <div class="premium-glass glass-card">
+            <div class="premium-badge">&#11088; Premium Collection</div>
+            <h2>Unlock 20 Elite Tools</h2>
+            <p>AI-powered analysis, deep code refactoring, legal contract review, and enterprise-grade security scanning.</p>
+            <div class="premium-features">
+                <span class="feature">&#10003; AI Code Refactor Engine</span>
+                <span class="feature">&#10003; Deep APK Reverse Engineer</span>
+                <span class="feature">&#10003; Neural Regex Generator</span>
+                <span class="feature">&#10003; Smart Vulnerability Scanner</span>
+                <span class="feature">&#10003; Database Query Optimizer</span>
+                <span class="feature">&#10003; + 15 more premium tools</span>
+            </div>
+            <button class="btn btn-primary btn-lg pulse" onclick="showPaywall()">Get Premium Access</button>
+            <p class="premium-price">Starting at <strong>$9.99/mo</strong></p>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-glass glass-card">
+            <h2>About KareemTools</h2>
+            <p>Built by <strong>Kareem Mohamed Elsayed</strong> to provide developers, designers, and engineers with the most comprehensive suite of online utilities available. From rare file analyzers to AI-powered refactoring engines, every tool is crafted for speed, accuracy, and ease of use.</p>
+            <div class="about-stats">
+                <div class="about-stat">100+<br><span>Tools</span></div>
+                <div class="about-stat">9<br><span>Categories</span></div>
+                <div class="about-stat">80+<br><span>Free</span></div>
+                <div class="about-stat">99.9%<br><span>Uptime</span></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="paywallModal">
+        <div class="glass-modal">
+            <button class="modal-close" onclick="hidePaywall()">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon">&#9670;</div>
+                <h3>Upgrade to Premium</h3>
+            </div>
+            <div class="modal-body">
+                <div class="paywall-tool-name" id="paywallToolName">AI Code Refactor Engine</div>
+                <p class="paywall-desc">This tool requires a premium subscription.</p>
+                <div class="pricing-tiers">
+                    <div class="tier" data-tier="monthly">
+                        <div class="tier-price">$9.99<span>/mo</span></div>
+                        <div class="tier-label">Monthly</div>
+                    </div>
+                    <div class="tier featured" data-tier="yearly">
+                        <div class="tier-save">Save 33%</div>
+                        <div class="tier-price">$79.99<span>/yr</span></div>
+                        <div class="tier-label">Yearly</div>
+                    </div>
+                    <div class="tier" data-tier="lifetime">
+                        <div class="tier-price">$199<span>once</span></div>
+                        <div class="tier-label">Lifetime</div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-lg btn-full" onclick="processPayment()">Start Free Trial</button>
+                <p class="trial-note">7-day free trial. Cancel anytime.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content glass-card">
+            <div class="footer-brand">
+                <span class="logo-text">Kareem<span class="accent">Tools</span></span>
+                <p>100+ curated developer tools for the modern professional.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Kareem&#8482;</strong> (Kareem Mohamed Elsayed). All Rights Reserved.</p>
+            <p class="footer-license">Licensed exclusively to Kareem Mohamed Elsayed. Unauthorized reproduction or redistribution prohibited.</p>
+        </div>
+    </footer>
+
+    <script src="tools-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
